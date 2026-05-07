@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Web Development Experiments</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+      min-height:100vh;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* HEADER */
+
+    header{
+      text-align:center;
+      padding:60px 20px 40px;
+    }
+
+    header h1{
+      font-size:3.5rem;
+      font-weight:700;
+      letter-spacing:2px;
+      margin-bottom:15px;
+      background:linear-gradient(to right,#38bdf8,#f8fafc);
+      background-clip: text;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    header p{
+      font-size:18px;
+      color:#dbeafe;
+    }
+
+    /* MAIN CONTAINER */
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+      padding-bottom:50px;
+    }
+
+    /* CARD DESIGN */
+
+    .card{
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.15);
+      border-radius:25px;
+      padding:30px;
+      transition:0.4s;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card::before{
+      content:'';
+      position:absolute;
+      top:-50px;
+      right:-50px;
+      width:150px;
+      height:150px;
+      background:rgba(255,255,255,0.08);
+      border-radius:50%;
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.02);
+      box-shadow:0 15px 35px rgba(0,0,0,0.35);
+    }
+
+    .card h2{
+      margin-bottom:25px;
+      font-size:24px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      color:#ffffff;
+    }
+
+    .card h2 i{
+      color:#38bdf8;
+    }
+
+    /* FILE BUTTONS */
+
+    .file-list{
+      list-style:none;
+    }
+
+    .file-list li{
+      margin:14px 0;
+    }
+
+    .file-list a{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      padding:14px 18px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.12);
+      color:white;
+      font-weight:500;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .file-list a:hover{
+      background:#38bdf8;
+      color:#0f172a;
+      transform:translateX(8px);
+    }
+
+    .file-list a i{
+      font-size:18px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:25px;
+      color:#dbeafe;
+      font-size:15px;
+      margin-top:20px;
+      border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:2.4rem;
+      }
+
+      .container{
+        width:95%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <h1>WEB DEVELOPMENT</h1>
+    <p>Interactive Practical File Index Dashboard</p>
+  </header>
+
+  <!-- CONTENT -->
+
+  <div class="container">
+
+    <!-- HTML EXPERIMENTS -->
+
+    <div class="card">
+
+      <h2>
+        <i class="fa-solid fa-code"></i>
+        HTML Experiments
+      </h2>
+
+      <ul class="file-list">
+
+        <li><a href="exp_1.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 1
+        </a></li>
+
+        <li><a href="exp_2.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 2
+        </a></li>
+
+        <li><a href="exp_3.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 3
+        </a></li>
+
+        <li><a href="exp_4.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 4
+        </a></li>
+
+        <li><a href="exp_5.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 5
+        </a></li>
+
+        <li><a href="exp_6.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 6
+        </a></li>
+
+        <li><a href="exp_7.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 7
+        </a></li>
+
+        <li><a href="exp_8.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 8
+        </a></li>
+
+        <li><a href="exp_9.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 9
+        </a></li>
+
+        <li><a href="exp_10.html" target="_blank">
+          <i class="fa-brands fa-html5"></i> Experiment 10
+        </a></li>
+
+      </ul>
+    </div>
+
+    <!-- EXP 11 -->
+
+    <div class="card">
+
+      <h2>
+        <i class="fa-solid fa-database"></i>
+        Experiment 11
+      </h2>
+
+      <ul class="file-list">
+
+        <li>
+          <a href="exp 11/library.xml" target="_blank">
+            <i class="fa-solid fa-file-code"></i>
+            library.xml
+          </a>
+        </li>
+
+        <li>
+          <a href="exp 11/style.css" target="_blank">
+            <i class="fa-brands fa-css3-alt"></i>
+            style.css
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- EXP 12 -->
+
+    <div class="card">
+
+      <h2>
+        <i class="fa-solid fa-boxes-stacked"></i>
+        Experiment 12
+      </h2>
+
+      <ul class="file-list">
+
+        <li>
+          <a href="exp 12/inventory.xml" target="_blank">
+            <i class="fa-solid fa-file-code"></i>
+            inventory.xml
+          </a>
+        </li>
+
+        <li>
+          <a href="exp 12/inventory_style.xsl" target="_blank">
+            <i class="fa-solid fa-layer-group"></i>
+            inventory_style.xsl
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- EXP 13 -->
+
+    <div class="card">
+
+      <h2>
+        <i class="fa-solid fa-user-graduate"></i>
+        Experiment 13
+      </h2>
+
+      <ul class="file-list">
+
+        <li>
+          <a href="exp 13/student_app.xml" target="_blank">
+            <i class="fa-solid fa-file-code"></i>
+            student_app.xml
+          </a>
+        </li>
+
+        <li>
+          <a href="exp 13/student_app.xsl" target="_blank">
+            <i class="fa-solid fa-layer-group"></i>
+            student_app.xsl
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Web Development Practical Dashboard | Designed by Aditya Ajit Banchhode
+  </footer>
+
+</body>
+</html>
